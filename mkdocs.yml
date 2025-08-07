@@ -24,7 +24,13 @@ nav:
   - Home: index.md
   - Research: research.md
   - Team:
-    - Alumni: team/alumni.md
     - Current-Members: team/current-members.md
+    - Alumni: team/alumni.md
   - Publications: publications.md
   - Join us: join-us.md
+
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
