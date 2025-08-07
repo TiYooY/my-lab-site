@@ -1,0 +1,53 @@
+# 新的工作流配置文件
+name: Deploy MkDocs site to GitHub Pages
+
+on:
+  # 在推送到 main 分支时触发
+  push:
+    branches: ["main"]
+
+  # 允许您在 Actions 标签页手动运行此工作流
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许一个并发部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # 构建任务
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - name: Install dependencies
+        run: pip install mkdocs-material
+      - name: Build with MkDocs
+        run: mkdocs build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  # 部署任务
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
