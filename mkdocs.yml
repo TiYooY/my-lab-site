@@ -1,0 +1,30 @@
+# 网站信息
+site_name: Yang's Research Group
+# site_url: https://your-username.github.io/my-lab-site/ # 以后部署到GitHub Pages的网址
+site_author: Prof. Yang
+site_description: 欢迎来到我们的课题组网站。我们专注于Civil engineering的研究。
+
+# 主题配置 (强烈推荐 Material for MkDocs)
+theme:
+  name: material
+  language: zh # 设置语言为中文
+  palette:
+    # 配色方案，可以试试 primary: blue, accent: indigo 等
+    primary: 'indigo'
+    accent: 'blue'
+  features:
+    - navigation.tabs # 使用顶部标签页导航
+    - header.autohide # 自动隐藏页眉
+    - navigation.sticky 
+    - navigation.top
+    
+
+# 网站导航菜单 (非常重要！)
+nav:
+  - Home: index.md
+  - Research: research.md
+  - Team:
+    - Alumni: team/alumni.md
+    - Current-Members: team/current-members.md
+  - Publications: publications.md
+  - Join us: join-us.md
