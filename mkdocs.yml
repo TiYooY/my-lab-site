@@ -1,36 +1,59 @@
 # 网站信息
 site_name: Yang's Research Group
-# site_url: https://your-username.github.io/my-lab-site/ # 以后部署到GitHub Pages的网址
 site_author: Prof. Yang
 site_description: 欢迎来到我们的课题组网站。我们专注于Civil engineering的研究。
 
-# 主题配置 (强烈推荐 Material for MkDocs)
+# 关键修正：在顶层明确指定文档源目录
+docs_dir: src/docs
+
+# 主题配置
 theme:
   name: material
-  language: zh # 设置语言为中文
+  features:
+    - navigation.tabs
+    - header.autohide
+    - navigation.sticky
+    - navigation.top
   palette:
-    # 配色方案，可以试试 primary: blue, accent: indigo 等
     primary: 'indigo'
     accent: 'blue'
-  features:
-    - navigation.tabs # 使用顶部标签页导航
-    - header.autohide # 自动隐藏页眉
-    - navigation.sticky 
-    - navigation.top
-    
 
-# 网站导航菜单 (非常重要！)
-nav:
-  - Home: index.md
-  - Research: research.md
-  - Team:
-    - Current-Members: team/current-members.md
-    - Alumni: team/alumni.md
-  - Publications: publications.md
-  - Join us: join-us.md
-
+# Markdown扩展
 markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
   - md_in_html
+
+# 导航配置
+nav:
+  - Home: index.md
+  - Research: research.md
+  - Team:
+    - Current Members: team/current-members.md
+    - Alumni: team/alumni.md
+  - Publications: publications.md
+  - News: news.md
+  - Join us: join-us.md
+
+# 插件配置
+plugins:
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
+          nav_translations:
+            Home: 首页
+            Research: 研究方向
+            Team: 团队成员
+            Current Members: 在读成员
+            Alumni: 毕业成员
+            Publications: 发表论文
+            News: 新闻动态
+            Join us: 加入我们

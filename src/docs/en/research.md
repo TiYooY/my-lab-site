@@ -3,7 +3,7 @@
 本实验室致力于通过理论、实验与计算相结合的方法，解决土木工程领域的前沿挑战，旨在构建更安全、更智能、更耐久的下一代基础设施。以下是我们当前的主要研究方向和项目详情。
 
 ---
-## Accelerated Bridge Construction
+## Accelerated Bridge Construction { #accelerated-bridge-construction }
 
 在这里，您可以详细介绍“加速桥梁施工”这个大方向。可以写3-5段话，介绍这个领域的背景、当前的挑战、我们实验室所采用的研究方法以及长远目标。段落之间请使用空行隔开。
 
@@ -23,11 +23,10 @@
 * **预期成果**:
     * 为工程设计提供可靠的理论依据和构造建议。
 
-![在这里放一张项目相关的图片或图表](assets.research.abc-project1.png)
+![在这里放一张项目相关的图片或图表]()
 
 ---
-
-## Seismic Resilience and Damage Mitigation
+## Seismic Resilience and Damage Mitigation { #seismic-resilience }
 
 在这里详细介绍“结构抗震与损伤控制”这个大方向。介绍实验室在提升结构抗震性能、实现震后快速恢复等方面的研究工作。
 
@@ -36,11 +35,10 @@
 #### [例如：研究该新型结构体系的滞回性能和损伤机理...]
 #### [例如：在振动台上进行测试，并与传统设计进行对比...]
 
-![自复位桥墩实验照片](assets.research.seismic-project1.jpg)
+![自复位桥墩实验照片]()
 
 ---
-
-## Application of Novel Materials
+## Application of Novel Materials { #novel-materials }
 
 在这里详细介绍“新型材料应用”这个大方向。比如实验室如何利用超高性能混凝土(UHPC)、高强度钢筋、FRP等材料来提升结构性能。
 
