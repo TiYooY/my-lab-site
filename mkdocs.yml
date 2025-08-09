@@ -2,6 +2,7 @@
 site_name: Yang's Research Group
 site_author: Prof. Yang
 site_description: 欢迎来到我们的课题组网站。我们专注于Civil engineering的研究。
+site_url: https://tiyooy.github.io/my-lab-site/
 
 # 关键修正：在顶层明确指定文档源目录
 docs_dir: src/docs
