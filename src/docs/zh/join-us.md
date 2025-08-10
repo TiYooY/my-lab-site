@@ -1,14 +1,14 @@
-## 加入我们 (Join Us)
 
 我们一直在寻找对结构工程充满热情的优秀博士生、硕士生和本科生加入我们的团队。我们提供世界一流的实验设备、紧密的行业合作以及充满活力的学术氛围。
 
+杨教授的课题组热忱欢迎对以下两个研究方向感兴趣的博士和硕士申请者加入：（1）通过构件再利用实现结构可持续性；（2）面向自动驾驶卡车编队与气候变化的桥梁未来适应性研究。
 如果您对我们的研究方向感兴趣，并具备扎实的结构力学、有限元分析或实验研究背景，欢迎通过邮件联系 **Cancan Yang** 教授 ([yangc106@mcmaster.ca](mailto:yangc106@mcmaster.ca)) 并附上您的简历、成绩单和个人陈述。
 
 ---
 
-## Follow Us
+## 关注我们
 
-Stay connected and get a glimpse into our daily work, achievements, and lab culture by following us on our social and academic platforms.
+关注我们的社交及学术平台，与我们保持联系，一窥我们的日常工作、成就及实验室文化。
 
 - [:fontawesome-brands-github: &nbsp; **GitHub** - See our open-source projects](https://github.com/TiYooY)
 - [:fontawesome-brands-linkedin: &nbsp; **LinkedIn** - Connect professionally](https://www.linkedin.com/)

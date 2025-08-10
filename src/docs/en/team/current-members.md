@@ -20,16 +20,52 @@
     z-index: 10;
 }
 
+.supervisor-card {
+    border: 2px solid #3F51B5;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+    min-height: 320px;
+    max-width: 400px;
+    margin: 0 auto 40px;
+}
+
+.supervisor-card .member-photo {
+    border: 4px solid #3F51B5;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;  /* 新增 */
+    object-position: center;  /* 新增 */
+    background-color: #f5f5f5;  /* 新增 */
+}
+
+.supervisor-card h3 {
+    color: #3F51B5 !important;
+    font-size: 1.4em;
+    margin-bottom: 5px !important;
+}
+
+.supervisor-title {
+    color: #666;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .member-photo {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    object-fit: cover;
     margin: 0 auto 10px;
     display: block;
     border: 3px solid #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: #f5f5f5; /* 在图片加载失败时显示一个占位背景色 */
+
+    /* 以下是关键的新增/修改属性 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .member-info {
     opacity: 0;
@@ -106,21 +142,47 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 15px;
     }
+    
+    .supervisor-card {
+        max-width: 100%;
+    }
 }
 </style>
+
+## Principal Investigator
+
+<div class="member-card supervisor-card">
+    <img src="../../assets/Test.svg" alt="Prof. Cancan Yang" class="member-photo">
+    <h3>Prof. Cancan Yang</h3>
+    <p class="supervisor-title">Principal Investigator</p>
+    <p>Structural Engineering & Smart Infrastructure</p>
+    
+    <div class="member-info">
+        <h3>Prof. Cancan Yang</h3>
+        <p><strong>Position:</strong> Associate Professor & Director of Applied Dynamics Laboratory</p>
+        <p><strong>Research Areas:</strong> Bridge structural challenges and resilience, Climate-induced structural deterioration, Transportation technology evolution, Sustainable infrastructure development</p>
+        <p><strong>Education:</strong> PhD in Civil Engineering, University at Buffalo, State University of New York</p>
+        <p><strong>Experience:</strong> 15+ years in structural engineering research</p>
+        <p><strong>Publications:</strong> 50+ journal papers, 30+ patents</p>
+        <p><strong>Email:</strong> yangc106@mcmaster.ca</p>
+        <p><strong>Office:</strong> JHE, Room 339</p>
+    </div>
+</div>
+
+---
 
 ## Postdoctoral Researchers
 
 <div class="member-grid">
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Dr. Zhang" class="member-photo">
-    <h3>Dr. Zhang Wei</h3>
+    <div class="member-photo" style="background-image: url('../../assets/Test.svg')"></div>
+    <h3>Dr. Haifeng He</h3>
     <p><strong>Postdoctoral Researcher</strong></p>
     <p>Structural Dynamics</p>
     
     <div class="member-info">
-        <h3>Dr. Zhang Wei</h3>
+        <h3>Dr. Haifeng He</h3>
         <p><strong>Research Focus:</strong> Earthquake engineering, structural vibration control</p>
         <p><strong>Education:</strong> PhD in Civil Engineering, Tsinghua University (2022)</p>
         <p><strong>Interests:</strong> Rock climbing, photography, classical music</p>
@@ -130,13 +192,13 @@
 </div>
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Dr. Smith" class="member-photo">
-    <h3>Dr. Sarah Smith</h3>
+    <div class="member-photo" style="background-image: url('../../assets/Test.svg')"></div>
+    <h3>Dr. Ghazal Saed</h3>
     <p><strong>Postdoctoral Researcher</strong></p>
     <p>Sustainable Materials</p>
     
     <div class="member-info">
-        <h3>Dr. Sarah Smith</h3>
+        <h3>Dr. Ghazal Saed</h3>
         <p><strong>Research Focus:</strong> Green concrete, recycled materials, life cycle assessment</p>
         <p><strong>Education:</strong> PhD in Materials Science, MIT (2023)</p>
         <p><strong>Interests:</strong> Hiking, sustainable living, cooking</p>
@@ -154,15 +216,15 @@
 <div class="member-grid">
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Li Ming" class="member-photo">
-    <h3>Li Ming</h3>
-    <p><strong>PhD Student (3rd year)</strong></p>
+    <div class="member-photo" style="background-image: url('../../assets/Test.svg')"></div>
+    <h3>Gaohong Ye</h3>
+    <p><strong>PhD Student (2nd year)</strong></p>
     <p>Smart Infrastructure</p>
     
     <div class="member-info">
-        <h3>Li Ming</h3>
+        <h3>Gaohong Ye</h3>
         <p><strong>Research Topic:</strong> IoT sensors for bridge health monitoring</p>
-        <p><strong>Expected Graduation:</strong> 2026</p>
+        <p><strong>Expected Graduation:</strong> 2028</p>
         <p><strong>Background:</strong> MS in Civil Engineering, Beijing University</p>
         <p><strong>Interests:</strong> Gaming, badminton, AI technology</p>
         <p><strong>Current Project:</strong> Wireless sensor network optimization</p>
@@ -170,15 +232,15 @@
 </div>
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Chen Xiao" class="member-photo">
-    <h3>Chen Xiao</h3>
-    <p><strong>PhD Student (2nd year)</strong></p>
+    <div class="member-photo" style="background-image: url('../../assets/Tianyang Yin.jpeg')"></div>
+    <h3>Tianyang Yin</h3>
+    <p><strong>PhD Student (1st year)</strong></p>
     <p>Computational Mechanics</p>
     
     <div class="member-info">
-        <h3>Chen Xiao</h3>
+        <h3>Tianyang Yin</h3>
         <p><strong>Research Topic:</strong> Machine learning in finite element analysis</p>
-        <p><strong>Expected Graduation:</strong> 2027</p>
+        <p><strong>Expected Graduation:</strong> 2029</p>
         <p><strong>Background:</strong> MS in Mechanical Engineering, Shanghai Jiao Tong University</p>
         <p><strong>Interests:</strong> Machine learning, swimming, science fiction</p>
         <p><strong>Skills:</strong> Python, MATLAB, ANSYS</p>
@@ -186,7 +248,7 @@
 </div>
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Wang Lei" class="member-photo">
+    <div class="member-photo" style="background-image: url('../../assets/Test.svg')"></div>
     <h3>Wang Lei</h3>
     <p><strong>PhD Student (1st year)</strong></p>
     <p>Geotechnical Engineering</p>
@@ -210,7 +272,7 @@
 <div class="member-grid">
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Liu Yan" class="member-photo">
+    <div class="member-photo" style="background-image: url('../../assets/Test.svg')"></div>
     <h3>Liu Yan</h3>
     <p><strong>Master's Student (2nd year)</strong></p>
     <p>Structural Analysis</p>
@@ -226,7 +288,7 @@
 </div>
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Zhao Mei" class="member-photo">
+    <div class="member-photo" style="background-image: url('../../assets/Test.svg')"></div>
     <h3>Zhao Mei</h3>
     <p><strong>Master's Student (1st year)</strong></p>
     <p>Environmental Engineering</p>
@@ -242,7 +304,7 @@
 </div>
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Sun Hao" class="member-photo">
+    <div class="member-photo" style="background-image: url('../../assets/Test.svg')"></div>
     <h3>Sun Hao</h3>
     <p><strong>Master's Student (1st year)</strong></p>
     <p>Construction Management</p>
@@ -268,7 +330,7 @@
 <div class="member-grid">
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Kim Ji-won" class="member-photo">
+    <div class="member-photo" style="background-image: url('../../assets/Test.svg')"></div>
     <h3>Kim Ji-won</h3>
     <p><strong>Research Assistant</strong></p>
     <p>Data Analysis</p>
@@ -286,7 +348,7 @@
 </div>
 
 <div class="member-card">
-    <img src="../../assets/Test.svg" alt="Alex Jones" class="member-photo">
+    <div class="member-photo" style="background-image: url('../../assets/Test.svg')"></div>
     <h3>Alex Jones</h3>
     <p><strong>Research Assistant</strong></p>
     <p>Lab Maintenance</p>

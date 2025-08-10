@@ -1,8 +1,6 @@
-## 加入我们 (Join Us)
+We are always looking for talented PhD, master's, and undergraduate students who are passionate about structural engineering to join our team. We offer world-class experimental equipment, close industry collaboration, and a vibrant academic atmosphere.
 
-我们一直在寻找对结构工程充满热情的优秀博士生、硕士生和本科生加入我们的团队。我们提供世界一流的实验设备、紧密的行业合作以及充满活力的学术氛围。
-
-如果您对我们的研究方向感兴趣，并具备扎实的结构力学、有限元分析或实验研究背景，欢迎通过邮件联系 **Cancan Yang** 教授 ([yangc106@mcmaster.ca](mailto:yangc106@mcmaster.ca)) 并附上您的简历、成绩单和个人陈述。
+If you are interested in our research areas and have a solid background in structural mechanics, finite element analysis, or experimental research, please contact us by email. **Prof.Cancan Yang** ([yangc106@mcmaster.ca](mailto:yangc106@mcmaster.ca)) Please attach your resume, transcript, and personal statement.
 
 ---
 
