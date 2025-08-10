@@ -5,3 +5,16 @@
 如果您对我们的研究方向感兴趣，并具备扎实的结构力学、有限元分析或实验研究背景，欢迎通过邮件联系 **Cancan Yang** 教授 ([yangc106@mcmaster.ca](mailto:yangc106@mcmaster.ca)) 并附上您的简历、成绩单和个人陈述。
 
 </div>
+
+---
+
+## Follow Us
+
+Stay connected and get a glimpse into our daily work, achievements, and lab culture by following us on our social and academic platforms.
+
+* [:fontawesome-brands-github: &nbsp; **GitHub** - See our open-source projects](https://github.com/TiYooY)
+* [:academicons-google-scholar: &nbsp; **Google Scholar** - Read our latest publications](https://scholar.google.com/citations?user=Kjg5fzcAAAAJ&hl=en)
+* [:fontawesome-brands-linkedin: &nbsp; **LinkedIn** - Connect with our professional network](https://www.linkedin.com/)
+
+
+---

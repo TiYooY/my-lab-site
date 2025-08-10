@@ -1,2 +1,3 @@
-mkdocs-material
+mkdocs-material[blog]
 mkdocs-static-i18n
+mkdocs-bibtex

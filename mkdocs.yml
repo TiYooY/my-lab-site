@@ -4,7 +4,7 @@ site_author: Prof. Yang
 site_description: 欢迎来到我们的课题组网站。我们专注于Civil engineering的研究。
 site_url: https://tiyooy.github.io/my-lab-site/
 
-# 关键修正：在顶层明确指定文档源目录
+# 文档源目录
 docs_dir: src/docs
 
 # 主题配置
@@ -34,11 +34,12 @@ nav:
     - Current Members: team/current-members.md
     - Alumni: team/alumni.md
   - Publications: publications.md
-  - News: news.md
+  - News: news/index.md
   - Join us: join-us.md
 
 # 插件配置
 plugins:
+  - search
   - i18n:
       docs_structure: folder
       languages:
