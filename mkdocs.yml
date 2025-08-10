@@ -19,6 +19,9 @@ theme:
     primary: 'indigo'
     accent: 'blue'
 
+extra_css:
+  - assets/css/custom.css
+  
 # Markdown扩展
 markdown_extensions:
   - pymdownx.details
